@@ -1,6 +1,6 @@
 {
-    "name": "manyou/leancloud",
-    "description": "Clients for LeanCloud",
+    "name": "manyou/leanstorage",
+    "description": "LeanCloud LeanStorage Client",
     "type": "library",
     "require": {
         "php": ">=8.1",
