@@ -12,6 +12,7 @@ use Manyou\LeanStorage\Request\HasJsonBody;
 use Manyou\LeanStorage\Request\HasQuery;
 use Manyou\LeanStorage\Request\Request;
 use Manyou\PromiseHttpClient\PromiseHttpClientInterface;
+use Symfony\Component\Messenger\Attribute\AsMessageHandler;
 use Symfony\Contracts\HttpClient\ResponseInterface;
 
 use function array_map;
@@ -70,6 +71,12 @@ class LeanStorageClient
 
                 return $response;
             });
+    }
+
+    #[AsMessageHandler]
+    public function handle(Request $request): mixed
+    {
+        return $this->request($request)->wait();
     }
 
     /**
