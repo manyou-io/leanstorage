@@ -6,11 +6,11 @@
         "php": ">=8.1",
         "symfony/http-client-contracts": "^3.0",
         "symfony/http-client-implementation": "^3.0",
-        "guzzlehttp/promises": "^1.4",
+        "guzzlehttp/promises": "^1.4|^2.0",
         "manyou/promise-http-client": "^0.1"
     },
     "require-dev": {
-      "symfony/http-client": "^6.3 || ^7.0"
+      "symfony/http-client": "^6.4|^7.0"
     },
     "license": "Apache-2.0",
     "autoload": {
