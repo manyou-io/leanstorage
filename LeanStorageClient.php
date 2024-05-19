@@ -63,7 +63,7 @@ class LeanStorageClient
 
         return $this->httpClient->request($request->getMethod(), $request->getPath(), $options + $this->options)
             ->then(static function (ResponseInterface $response) {
-                $response = $response->toArray();
+                $response = $response->toArray(false);
 
                 if (isset($response['error'])) {
                     throw RequestException::fromResponse($response);
