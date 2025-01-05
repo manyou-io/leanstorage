@@ -10,7 +10,7 @@
         "manyou/promise-http-client": "^0.1"
     },
     "require-dev": {
-      "symfony/http-client": "^6.4|^7.0"
+      "symfony/http-client": "^7.0"
     },
     "license": "Apache-2.0",
     "autoload": {
